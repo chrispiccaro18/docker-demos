@@ -24,7 +24,7 @@ ENV NODE_ENV=development
 # install dev deps
 RUN npm install --only=development && npm cache clean --force
 
-CMD ["node_modules/nodemon/bin/nodemon.js", "./bin/www --inspect=0.0.0.0:9229"]
+CMD ["node_modules/nodemon/bin/nodemon.js", "./bin/www", "--inspect=0.0.0.0:9229"]
 
 FROM dev as test
 
