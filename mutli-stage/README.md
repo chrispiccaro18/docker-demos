@@ -35,7 +35,7 @@
 
 ### Run dev image
 
-`docker run -p 80:3000 --name dev nodemulti:dev`
+`docker run --init -p 80:3000 --name dev nodemulti:dev`
 
 ### Test dev is working
 
